@@ -1,0 +1,14 @@
+{
+  "name": "Thaumcraft",
+  "quests": [
+    {
+      "name": "Unnamed",
+      "x": 39,
+      "y": 160,
+      "prerequisites": [
+        "{les bases!}[magie !]"
+      ]
+    }
+  ],
+  "reputationBar": []
+}

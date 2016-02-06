@@ -1,0 +1,94 @@
+[
+  {
+    "name": "crafter",
+    "neutral": "noob total",
+    "markers": [
+      {
+        "name": "noob",
+        "value": 5
+      },
+      {
+        "name": "bricoleur",
+        "value": 10
+      },
+      {
+        "name": "crafteur du dimanche",
+        "value": 15
+      },
+      {
+        "name": "prodige",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "name": "gifted",
+    "neutral": "not gifted",
+    "markers": [
+      {
+        "name": "pregifted",
+        "value": 1
+      },
+      {
+        "name": "gifted",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "name": "Thaumaturge",
+    "neutral": "Novice",
+    "markers": [
+      {
+        "name": "Aprenti",
+        "value": 5
+      },
+      {
+        "name": "Amateur",
+        "value": 20
+      },
+      {
+        "name": "Agéri",
+        "value": 50
+      },
+      {
+        "name": "Maitre",
+        "value": 100
+      }
+    ]
+  },
+  {
+    "name": "Mage",
+    "neutral": "Novice"
+  },
+  {
+    "name": "Sorcier",
+    "neutral": "Novice"
+  },
+  {
+    "name": "Druid",
+    "neutral": "Novice"
+  },
+  {
+    "name": "Cultiste",
+    "neutral": "Novice",
+    "markers": [
+      {
+        "name": "Unnamed",
+        "value": 0
+      },
+      {
+        "name": "Unnamed",
+        "value": 0
+      },
+      {
+        "name": "Unnamed",
+        "value": 0
+      },
+      {
+        "name": "Unnamed",
+        "value": 0
+      }
+    ]
+  }
+]
