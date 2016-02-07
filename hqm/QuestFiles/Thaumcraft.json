@@ -2,11 +2,89 @@
   "name": "Thaumcraft",
   "quests": [
     {
-      "name": "Unnamed",
-      "x": 39,
-      "y": 160,
+      "name": "Les recherches",
+      "description": "La connaissance et source de pouvoir, plus vous en saurez plus vous serez puissant.",
+      "x": 18,
+      "y": 48,
+      "icon": {
+        "id": "Thaumcraft:ItemInkwell"
+      },
       "prerequisites": [
-        "{les bases!}[magie !]"
+        "L\u0027encyclopédie du thaumaturge"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": []
+        }
+      ]
+    },
+    {
+      "name": "L\u0027encyclopédie du thaumaturge",
+      "description": "Le thaumonomicon est l\u0027outil indispensable pour tout thaumaturge en devenir",
+      "x": 18,
+      "y": 15,
+      "icon": {
+        "id": "Thaumcraft:ItemThaumonomicon"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Bibliothèque",
+          "longDescription": "Avant toute chose il faut appronfondir ses connaissances",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:bookshelf"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Le thaumonomicon",
+          "longDescription": "Un peu de magie mélée a la connaissance et voilà le thaumonomicon :: En bref utilisez votre baguette sur la bibliothèqye",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemThaumonomicon"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:paper",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:dye"
+        },
+        {
+          "id": "minecraft:glass",
+          "amount": 3
+        },
+        {
+          "id": "minecraft:feather"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 2
+        },
+        {
+          "id": "minecraft:dye"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 2,
+          "value": 5
+        }
       ]
     }
   ],
