@@ -1,0 +1,28 @@
+{
+  "name": "Unnamed set",
+  "quests": [
+    {
+      "name": "Unnamed",
+      "x": 22,
+      "y": 15,
+      "prerequisites": [
+        "{les bases!}[magie !]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:sapling"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

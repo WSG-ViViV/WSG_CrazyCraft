@@ -1,0 +1,14 @@
+{
+  "name": "Ars Magica",
+  "quests": [
+    {
+      "name": "Unnamed2",
+      "x": 30,
+      "y": 76,
+      "prerequisites": [
+        "{les bases!}[magie !]"
+      ]
+    }
+  ],
+  "reputationBar": []
+}

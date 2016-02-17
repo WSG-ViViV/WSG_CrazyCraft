@@ -1,0 +1,713 @@
+{
+  "name": "The Exchange market",
+  "quests": [
+    {
+      "name": "market exchange",
+      "description": "Des resources!",
+      "x": 158,
+      "y": 104,
+      "icon": {
+        "id": "Thaumcraft:ItemResource",
+        "damage": 18
+      },
+      "prerequisites": [
+        "{Bienvenu!}[de la dépendance...]"
+      ],
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 8,
+              "lower": 1,
+              "upper": 2,
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "IC2 material store.",
+      "description": "des materiaux pour IC2",
+      "x": 87,
+      "y": 19,
+      "icon": {
+        "id": "IC2:blockKineticGenerator",
+        "damage": 5
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 50 pièces seulement!",
+          "longDescription": "Des materiaux pour industrialcraft.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 50
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "IC2:itemIngot",
+          "amount": 16
+        },
+        {
+          "id": "IC2:itemIngot",
+          "damage": 1,
+          "amount": 16
+        },
+        {
+          "id": "IC2:itemIngot",
+          "damage": 5,
+          "amount": 16
+        },
+        {
+          "id": "IC2:itemIngot",
+          "damage": 6,
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "name": "IC2 tool store.",
+      "description": "Des outils pour IC2.",
+      "x": 111,
+      "y": 19,
+      "icon": {
+        "id": "IC2:itemToolForgeHammer"
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "pour 10 pièces seulement!",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "IC2:itemToolCutter"
+        },
+        {
+          "id": "IC2:itemToolForgeHammer"
+        }
+      ]
+    },
+    {
+      "name": "Herborist stand.",
+      "description": "une étale d\u0027erboriste",
+      "x": 32,
+      "y": 77,
+      "icon": {
+        "id": "minecraft:sapling"
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "pour 10 pièces seulement!",
+          "longDescription": "sur cette étale vous pouvez voir deverse pousses d\u0027arbres.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:sapling",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:sapling",
+          "damage": 1,
+          "amount": 16
+        },
+        {
+          "id": "minecraft:sapling",
+          "damage": 2,
+          "amount": 16
+        },
+        {
+          "id": "minecraft:sapling",
+          "damage": 3,
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "name": "Herborist stand.",
+      "description": "Une étale d\u0027herboriste.",
+      "x": 56,
+      "y": 77,
+      "icon": {
+        "id": "minecraft:cactus"
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 10 pièces seulement!",
+          "longDescription": "sur cette étale vous pouvez voir deverse pousses d\u0027arbres.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:sapling",
+          "damage": 4,
+          "amount": 16
+        },
+        {
+          "id": "minecraft:sapling",
+          "damage": 5,
+          "amount": 16
+        },
+        {
+          "id": "minecraft:brown_mushroom",
+          "amount": 8
+        },
+        {
+          "id": "minecraft:cactus",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "fleurist stand.",
+      "description": "Une étale de fleuriste.",
+      "x": 44,
+      "y": 98,
+      "icon": {
+        "id": "minecraft:yellow_flower"
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "longDescription": "Elle sont fraiche de ce matin mes belles fleurs!",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:yellow_flower",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:red_flower",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:red_flower",
+          "damage": 1,
+          "amount": 16
+        },
+        {
+          "id": "minecraft:red_flower",
+          "damage": 2,
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "name": "fleurist stand.",
+      "description": "Une étale de fleuriste.",
+      "x": 68,
+      "y": 98,
+      "icon": {
+        "id": "minecraft:red_flower",
+        "damage": 3
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 10 pièces seulement!",
+          "longDescription": "Elle sont fraiche de ce matin mes belles fleurs!",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:red_flower",
+          "damage": 3,
+          "amount": 16
+        },
+        {
+          "id": "minecraft:red_flower",
+          "damage": 4,
+          "amount": 16
+        },
+        {
+          "id": "minecraft:red_flower",
+          "damage": 5,
+          "amount": 16
+        },
+        {
+          "id": "minecraft:red_flower",
+          "damage": 6,
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "name": "Fleurist stand.",
+      "description": "Une étale de fleuriste.",
+      "x": 92,
+      "y": 98,
+      "icon": {
+        "id": "minecraft:waterlily"
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 10 pièces seulement!",
+          "longDescription": "Elle sont fraiche de ce matin mes belles fleurs!",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:red_flower",
+          "damage": 7,
+          "amount": 16
+        },
+        {
+          "id": "minecraft:red_flower",
+          "damage": 8,
+          "amount": 16
+        },
+        {
+          "id": "minecraft:vine",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:waterlily",
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "name": "General store.",
+      "description": "Une étale de bric-à-brac",
+      "x": 193,
+      "y": 87,
+      "icon": {
+        "id": "minecraft:clay_ball"
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 50 pièces seulement!",
+          "longDescription": "sur cette étale vous pouver voir, une pile d\u0027argile, de la poudre à cannon, de la redstone et de la glowstone.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 50
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:clay_ball"
+        },
+        {
+          "id": "minecraft:redstone"
+        },
+        {
+          "id": "minecraft:glowstone_dust"
+        },
+        {
+          "id": "minecraft:gunpowder"
+        }
+      ]
+    },
+    {
+      "name": "General store",
+      "description": "Une étale de bric-à-brac",
+      "x": 217,
+      "y": 87,
+      "icon": {
+        "id": "minecraft:diamond"
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "pour 100 pièces seulement!",
+          "longDescription": "Sur cette étale vous pouvez voir, un tas de charbon, des lingots de fer, une pile de silex et quelques diamants.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 100
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:diamond"
+        },
+        {
+          "id": "minecraft:coal",
+          "amount": 64
+        },
+        {
+          "id": "minecraft:iron_ingot",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:flint",
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "name": "Herborist stand",
+      "description": "Une étale d\u0027herboriste.",
+      "x": 80,
+      "y": 77,
+      "icon": {
+        "id": "minecraft:wheat_seeds"
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 20 pièces seulement!",
+          "longDescription": "Sur cette étale vous pouvez voir une variétés de graines et de bouttures.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:wheat_seeds",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:reeds",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:pumpkin_seeds",
+          "amount": 8
+        },
+        {
+          "id": "minecraft:melon_seeds",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "Relieur stand.",
+      "description": "Une étale de relieur de livre.",
+      "x": 229,
+      "y": 36,
+      "icon": {
+        "id": "minecraft:leather"
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 20 pièces seulement!",
+          "longDescription": "Sur cette étale vous pouvez voir le materiel de relieur, du cuir, des plumes, de l\u0027encre et de la ficelle.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:leather",
+          "amount": 4
+        },
+        {
+          "id": "minecraft:feather",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:string",
+          "amount": 8
+        },
+        {
+          "id": "minecraft:dye",
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "name": "Liquids stand.",
+      "description": "eau ou lave au choix (les sceau de sont pas offerts.)",
+      "x": 205,
+      "y": 108,
+      "icon": {
+        "id": "minecraft:bucket"
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 5 pièces seulement!",
+          "longDescription": "Cette étale est entourée de tanks de forme variés.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:bucket"
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:water_bucket"
+        },
+        {
+          "id": "minecraft:lava_bucket"
+        }
+      ]
+    },
+    {
+      "name": "Aventurier stand.",
+      "description": "Une échope d\u0027aventurier.",
+      "x": 229,
+      "y": 108,
+      "icon": {
+        "id": "minecraft:quartz"
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 200 pièces seulement!",
+          "longDescription": "cette échope est constituée de vitrines fermées a clé qui renferment du quartz du nether, des émeuraudes et des nether star.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 200
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:quartz",
+          "amount": 32
+        },
+        {
+          "id": "minecraft:emerald",
+          "amount": 2
+        },
+        {
+          "id": "minecraft:nether_star"
+        }
+      ]
+    },
+    {
+      "name": "Hunter stand.",
+      "description": "Une étale de chasseur.",
+      "x": 217,
+      "y": 129,
+      "icon": {
+        "id": "minecraft:bone"
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 50 pièces seulement!",
+          "longDescription": "Sur cette étale vous pouvez voir un tas d\u0027ossement, une jare remplie de slime, une autre remplie de charge de feu et quelque enderperls.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 50
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:bone",
+          "amount": 32
+        },
+        {
+          "id": "minecraft:slime_ball",
+          "amount": 64
+        },
+        {
+          "id": "minecraft:fire_charge",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:ender_pearl",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "Maréchal férant",
+      "description": "Une échope de maréchal ferant",
+      "x": 241,
+      "y": 129,
+      "icon": {
+        "id": "minecraft:saddle"
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 100 pièce seulement!",
+          "longDescription": "Sur cette large étale vous pouvez voir des selles et des armures pour cheuvaux.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 100
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:saddle",
+          "amount": 2
+        },
+        {
+          "id": "minecraft:iron_horse_armor",
+          "amount": 3
+        },
+        {
+          "id": "minecraft:golden_horse_armor",
+          "amount": 2
+        },
+        {
+          "id": "minecraft:diamond_horse_armor"
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

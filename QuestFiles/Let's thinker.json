@@ -1,0 +1,517 @@
+{
+  "name": "Let\u0027s thinker",
+  "description": "Haaaaa ! Thinker\u0027s construct, the way to go !",
+  "quests": [
+    {
+      "name": "The Thinker\u0027s way",
+      "description": "c\u0027est parti pour le thinkering!",
+      "x": 29,
+      "y": 17,
+      "icon": {
+        "id": "TConstruct:woodPattern",
+        "damage": 2
+      },
+      "prerequisites": [
+        "{les bases!}[Dig it up!]",
+        "{les bases!}[Ca va chauffer!]"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "les bases",
+          "longDescription": "Pour fabriquer des outils il vous faut diférentes pièces, pour faire ces pièces il vous faut des plans. la stencil table vous permet de créer les plans, le part builder de les fabriquer, quand a la tool station elle vous permet d\u0027assembler les diférentes parties de l\u0027outil. (les stencils peuvent étre stoqué dans un pattern chest).",
+          "items": [
+            {
+              "item": {
+                "id": "TConstruct:ToolStationBlock",
+                "damage": 10
+              },
+              "precision": "ORE_DICTIONARY"
+            },
+            {
+              "item": {
+                "id": "TConstruct:ToolStationBlock",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "TConstruct:ToolStationBlock"
+              }
+            },
+            {
+              "item": {
+                "id": "TConstruct:ToolStationBlock",
+                "damage": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "premièr outil",
+          "longDescription": "a l\u0027aide de vorte stencil table, faite les stencils pour la axe head et le tool rod.",
+          "items": [
+            {
+              "item": {
+                "id": "TConstruct:woodPattern",
+                "damage": 4
+              }
+            },
+            {
+              "item": {
+                "id": "TConstruct:woodPattern",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "TConstruct:blankPattern",
+          "amount": 12
+        },
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 20
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 7,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Pièces de pierre",
+      "description": "du bon usage des pattern",
+      "x": 54,
+      "y": 18,
+      "icon": {
+        "id": "TConstruct:hatchet",
+        "nbt": "{InfiTool:{BaseDurability:65,Head:1,BaseAttack:4,HarvestLevel:1,Attack:4,RenderHead:1,ModDurability:0.0f,Handle:1,Broken:0b,Shoddy:1.0f,RenderHandle:1,MiningSpeed:400,Unbreaking:0,Damage:0,BonusDurability:0,TotalDurability:65,Modifiers:3},display:{Name:\"§fStone Hatchet\"}}"
+      },
+      "prerequisites": [
+        "The Thinker\u0027s way"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "de quoi faire une hache",
+          "longDescription": "à l\u0027aide du part builder faite une tête de pioche et un manche.",
+          "items": [
+            {
+              "item": {
+                "id": "TConstruct:hatchetHead",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "TConstruct:toolRod",
+                "damage": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "assemblage",
+          "items": [
+            {
+              "item": {
+                "id": "TConstruct:hatchet",
+                "nbt": "{InfiTool:{BaseDurability:65,Head:1,BaseAttack:4,HarvestLevel:1,Attack:4,RenderHead:1,ModDurability:0.0f,Handle:1,Broken:0b,Shoddy:1.0f,RenderHandle:1,MiningSpeed:400,Unbreaking:0,Damage:0,BonusDurability:0,TotalDurability:65,Modifiers:3},display:{Name:\"§fStone Hatchet\"}}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "TConstruct:manualBook"
+        },
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "perparatifs",
+      "description": "De quoi construire une forge.",
+      "x": 40,
+      "y": 40,
+      "icon": {
+        "id": "TConstruct:Smeltery"
+      },
+      "prerequisites": [
+        "The Thinker\u0027s way"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Grout ?",
+          "longDescription": "Pour fair du grout, reportez vous a votre livre \"material and you volume 2\"",
+          "items": [
+            {
+              "item": {
+                "id": "TConstruct:CraftedSoil",
+                "damage": 1
+              },
+              "required": 64
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Seared briks!",
+          "longDescription": "Faite cuire votre grout.",
+          "items": [
+            {
+              "item": {
+                "id": "TConstruct:materials",
+                "damage": 2
+              },
+              "required": 64
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Constituants d\u0027une forge.",
+          "longDescription": "pour fabriquer ces différent conposant reportez vous a votre livre \"material and you volume3\", le layout de la forge y est aussi décrit.",
+          "items": [
+            {
+              "item": {
+                "id": "TConstruct:Smeltery",
+                "damage": 2
+              },
+              "required": 28
+            },
+            {
+              "item": {
+                "id": "TConstruct:Smeltery",
+                "damage": 1
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "TConstruct:Smeltery"
+              }
+            },
+            {
+              "item": {
+                "id": "TConstruct:LavaTank"
+              }
+            },
+            {
+              "item": {
+                "id": "TConstruct:LavaTank",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "TConstruct:SearedBlock",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "TConstruct:SearedBlock",
+                "damage": 2
+              }
+            },
+            {
+              "item": {
+                "id": "TConstruct:SearedBlock"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:lava_bucket",
+          "amount": 2
+        },
+        {
+          "id": "TConstruct:manualBook",
+          "damage": 2
+        },
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 50
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 7,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Aluminium brass ...",
+      "description": "Un metal pratique",
+      "x": 66,
+      "y": 40,
+      "icon": {
+        "id": "TConstruct:MetalBlock",
+        "damage": 7
+      },
+      "prerequisites": [
+        "perparatifs",
+        "{les bases!}[D\u0027autre ressources]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "aluminium brass",
+          "longDescription": "Pour faire de l\u0027aluminium brass il vous faudra du cuivre et de l\u0027aluminium, pour connaitre les proportions reportez vous a votre livre \"material and you volume3\". Faites le couler dans le casting bassin pour en faire un bloc.",
+          "items": [
+            {
+              "item": {
+                "id": "TConstruct:MetalBlock",
+                "damage": 7
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:lava_bucket",
+          "amount": 2
+        },
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "De quoi faire des lingots",
+      "description": "Casting like crazy!",
+      "x": 91,
+      "y": 40,
+      "icon": {
+        "id": "TConstruct:metalPattern"
+      },
+      "prerequisites": [
+        "Aluminium brass ..."
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Ingot cast",
+          "longDescription": "placez sur votre casting table un lingot (de nimporte quel type) et faite couller un peu d\u0027 aluminium brass dessus. avec ce moule vous pourez par la suite couller différents métaux dans la forme d\u0027un lingot. (vous pouvez même couller de l\u0027aluminium brass en lingot)",
+          "items": [
+            {
+              "item": {
+                "id": "TConstruct:metalPattern"
+              }
+            },
+            {
+              "item": {
+                "id": "TConstruct:materials",
+                "damage": 14
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "TConstruct:MetalBlock",
+          "damage": 7
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 7,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "des pièce d\u0027outil en METAL !!!",
+      "description": "Un peu plus durable.",
+      "x": 79,
+      "y": 61,
+      "icon": {
+        "id": "TConstruct:metalPattern",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Aluminium brass ...",
+        "La forge à outils."
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "à l\u0027aide des pièces en pierre que vous avez pu construire vous pouvez faire des moules en les placeant sur une casting table et en faisant couller de l\u0027aluminium brass dessus. enlevez ensuite la pièce en pierre pour couller du metal dessus voila! vorte pièce et faite.",
+          "items": [
+            {
+              "item": {
+                "id": "TConstruct:pickaxeHead",
+                "damage": 2
+              }
+            },
+            {
+              "item": {
+                "id": "TConstruct:toolRod"
+              }
+            },
+            {
+              "item": {
+                "id": "TConstruct:binding",
+                "damage": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 7,
+              "lower": 0,
+              "upper": 1,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:iron_ingot"
+        },
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 10
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 7,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "La forge à outils.",
+      "description": "Pour assembler des outils et armes avec des pièces en métal.",
+      "x": 53,
+      "y": 62,
+      "icon": {
+        "id": "TConstruct:ToolForgeBlock",
+        "damage": 10
+      },
+      "prerequisites": [
+        "perparatifs"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Tool Forge.",
+          "longDescription": "Construisez une tool forge.",
+          "items": [
+            {
+              "item": {
+                "id": "TConstruct:ToolForgeBlock"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 20
+        },
+        {
+          "id": "minecraft:lava_bucket",
+          "amount": 2
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 7,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Custom Tools.",
+      "description": "Personalisez votre équipement.",
+      "x": 79,
+      "y": 18,
+      "icon": {
+        "id": "TConstruct:pickaxe",
+        "nbt": "{InfiTool:{BaseDurability:250,Head:2,BaseAttack:3,HarvestLevel:2,Attack:3,RenderHead:2,ModDurability:0.0f,Handle:0,Broken:0b,Shoddy:0.0f,RenderHandle:0,Accessory:9,MiningSpeed:600,RenderAccessory:9,Unbreaking:1,Damage:0,BonusDurability:0,TotalDurability:250,Modifiers:4},display:{Name:\"§fIron Pickaxe\"}}"
+      },
+      "prerequisites": [
+        "Pièces de pierre",
+        "des pièce d\u0027outil en METAL !!!"
+      ],
+      "parentrequirement": 1,
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "hoe \u0026 shovel",
+          "longDescription": "De quoi faire une pelle et une hoe en pierre.",
+          "items": [
+            {
+              "item": {
+                "id": "TConstruct:shovelHead",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "TConstruct:scytheBlade",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 10
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 7,
+          "value": 5
+        }
+      ]
+    }
+  ],
+  "reputationBar": [
+    {
+      "reputationId": 7,
+      "x": 183,
+      "y": 203
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Botania",
+  "quests": [
+    {
+      "name": "Unnamed1",
+      "x": 72,
+      "y": 179,
+      "prerequisites": [
+        "{les bases!}[magie !]"
+      ]
+    }
+  ],
+  "reputationBar": []
+}

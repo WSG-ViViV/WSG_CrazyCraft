@@ -1,0 +1,14 @@
+{
+  "name": "Witchery",
+  "quests": [
+    {
+      "name": "Unnamed",
+      "x": 58,
+      "y": 110,
+      "prerequisites": [
+        "{les bases!}[magie !]"
+      ]
+    }
+  ],
+  "reputationBar": []
+}

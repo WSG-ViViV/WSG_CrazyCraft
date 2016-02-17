@@ -1,0 +1,64 @@
+{
+  "name": "Factorization",
+  "description": "Factorization !!!",
+  "quests": [
+    {
+      "name": "Factorization",
+      "description": "on factorize!",
+      "x": 26,
+      "y": 18,
+      "icon": {
+        "id": "factorization:FzBlock",
+        "damage": 11
+      },
+      "prerequisites": [
+        "{les bases!}[Ca va chauffer!]",
+        "{les bases!}[D\u0027autres ressources (f)]"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "factorization:FzBlock",
+                "damage": 11
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "factorization:docbook"
+        }
+      ]
+    },
+    {
+      "name": "Unnamed",
+      "x": 178,
+      "y": 15,
+      "icon": {
+        "id": "factorization:daybarrel",
+        "damage": 6162,
+        "nbt": "{log:{name:\"minecraft:log2\",Count:1b,Damage:0s},type:\"HOPPING\",slab:{name:\"minecraft:wooden_slab\",Count:1b,Damage:4s}}"
+      },
+      "prerequisites": [
+        "Factorization"
+      ]
+    },
+    {
+      "name": "Unnamed1",
+      "x": 178,
+      "y": 57,
+      "icon": {
+        "id": "factorization:FzBlock",
+        "damage": 8
+      },
+      "prerequisites": [
+        "Factorization"
+      ]
+    }
+  ],
+  "reputationBar": []
+}

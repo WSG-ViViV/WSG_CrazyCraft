@@ -1,0 +1,396 @@
+{
+  "name": "Thaumcraft",
+  "description": "La voie du thaumaturge",
+  "quests": [
+    {
+      "name": "Les recherches",
+      "description": "Avec la connaissance on obtient le pouvoir, plus vous en saurez plus vous serez puissanr",
+      "x": 23,
+      "y": 81,
+      "icon": {
+        "id": "Thaumcraft:ItemInkwell"
+      },
+      "prerequisites": [
+        "L\u0027encyclopédie du thaumaturge"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "La table de recherche",
+          "longDescription": "Deux tables en greatwood, des outils de scribes, un peu de papier d\u0027avance, c\u0027est tout ce qu\u0027il vous faut",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable"
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:ItemInkwell"
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "minecraft:paper"
+              },
+              "required": 32
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:gold_ore",
+          "amount": 2
+        },
+        {
+          "id": "minecraft:glass"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Thaumcraft:ItemShard",
+          "damage": 3,
+          "amount": 2
+        },
+        {
+          "id": "Thaumcraft:ItemShard",
+          "damage": 2,
+          "amount": 2
+        },
+        {
+          "id": "Thaumcraft:ItemShard",
+          "damage": 1,
+          "amount": 2
+        },
+        {
+          "id": "Thaumcraft:ItemShard",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "L\u0027encyclopédie du thaumaturge",
+      "description": "Le thaumonomicon est l\u0027outil indispensable pour tout thaumaturge en devenir",
+      "x": 20,
+      "y": 42,
+      "bigicon": true,
+      "icon": {
+        "id": "Thaumcraft:ItemThaumonomicon"
+      },
+      "prerequisites": [
+        "La première baguette",
+        "La première baguette"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "parentrequirement": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Bibliothèque",
+          "longDescription": "Avant toute chose il faut appronfondir ses connaissances",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:bookshelf"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Le thaumonomicon",
+          "longDescription": "Un peu de magie mélée a la connaissance et voilà le thaumonomicon :: En bref utilisez votre baguette sur la bibliothèqye",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemThaumonomicon"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:paper",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:dye"
+        },
+        {
+          "id": "minecraft:glass",
+          "amount": 3
+        },
+        {
+          "id": "minecraft:feather"
+        },
+        {
+          "id": "Thaumcraft:blockMagicalLog",
+          "amount": 2
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 2
+        },
+        {
+          "id": "minecraft:dye",
+          "amount": 2
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 2,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "L\u0027atelier arcanique",
+      "description": "La magie nécessite des outils adéquats pour être utilisée correctement",
+      "x": 55,
+      "y": 81,
+      "icon": {
+        "id": "Thaumcraft:blockTable",
+        "damage": 15
+      },
+      "prerequisites": [
+        "L\u0027encyclopédie du thaumaturge"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "une simple table",
+          "longDescription": "avant toute chose, une table sera nécessaire",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "L\u0027atelier arcanique",
+          "longDescription": "Un établi ce suffira pas, il vous faudra des outils magiques pour progresser, utilisez votre baguette sur une table",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable",
+                "damage": 15
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:gold_ore",
+          "amount": 2
+        },
+        {
+          "id": "minecraft:glass"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Thaumcraft:ItemShard",
+          "amount": 2
+        },
+        {
+          "id": "Thaumcraft:ItemShard",
+          "damage": 1,
+          "amount": 2
+        },
+        {
+          "id": "Thaumcraft:ItemShard",
+          "damage": 2,
+          "amount": 2
+        },
+        {
+          "id": "Thaumcraft:ItemShard",
+          "damage": 3,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "L\u0027analyse des aspect",
+      "description": "Une bonne partie des objets peuvent analysés pour récupérer des aspect, seulement il vous faudra un moyen de le faire",
+      "x": 23,
+      "y": 111,
+      "icon": {
+        "id": "Thaumcraft:ItemThaumometer"
+      },
+      "prerequisites": [
+        "Les recherches",
+        "L\u0027atelier arcanique"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Le thaumomètre",
+          "longDescription": "Utiliser votre atelier arcanique pour fabriquer votre thaumomètre, il vous faudra un peu de vis dans l\u0027opération",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemThaumometer"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "L\u0027alchimie de base",
+      "description": "L\u0027alchimie est une part importante de la magie",
+      "x": 55,
+      "y": 46,
+      "icon": {
+        "id": "Thaumcraft:blockMetalDevice"
+      },
+      "prerequisites": [
+        "L\u0027encyclopédie du thaumaturge"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Le chaudron",
+          "longDescription": "avant de commencer l\u0027alchimie il faudra avant tout fabriquer un chaudron",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:cauldron"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Le creyset alchimique",
+          "longDescription": "Insuflez de la mafie dans votre chaudron et vous obtiendrez le creuset",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockMetalDevice"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "La première baguette",
+      "description": "Le début de la magie",
+      "x": 55,
+      "y": 13,
+      "icon": {
+        "id": "Thaumcraft:WandCasting",
+        "nbt": "{aer:2500,perditio:2500,ignis:2500,ordo:2500,aqua:2500,terra:2500}"
+      },
+      "prerequisites": [
+        "Unnamed"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "La baguette",
+          "longDescription": "Il faut bien commencer par quelque chose, un bâton, 2 embouts en fer et voilà la baguette",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:WandCasting",
+                "nbt": "{perditio:2500,aer:2500,ignis:2500,aqua:2500,ordo:2500,terra:2500}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:planks",
+          "amount": 6
+        },
+        {
+          "id": "minecraft:book",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "La première baguette",
+      "description": "Le début de la magie",
+      "x": 23,
+      "y": 13,
+      "icon": {
+        "id": "Thaumcraft:WandCasting",
+        "nbt": "{perditio:2500,aer:2500,ignis:2500,aqua:2500,ordo:2500,terra:2500}"
+      },
+      "prerequisites": [
+        "Unnamed"
+      ],
+      "optionlinks": [
+        "La première baguette"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "La baguette",
+          "longDescription": "Il faut bien commencer par quelque chose, la baguette en bois et en fer sera votre premier outil",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:WandCasting",
+                "nbt": "{aer:2500,perditio:2500,ignis:2500,ordo:2500,aqua:2500,terra:2500}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:planks",
+          "amount": 6
+        },
+        {
+          "id": "minecraft:book",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Unnamed",
+      "x": 38,
+      "y": -20,
+      "icon": {
+        "id": "Thaumcraft:ItemThaumonomicon"
+      },
+      "prerequisites": [
+        "{les bases!}[magie !]"
+      ],
+      "trigger": "QUEST_TRIGGER"
+    }
+  ],
+  "reputationBar": [
+    {
+      "reputationId": 2,
+      "x": 31,
+      "y": 202
+    }
+  ]
+}

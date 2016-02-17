@@ -1,0 +1,950 @@
+{
+  "name": "Food Exchange Market",
+  "quests": [
+    {
+      "name": "Food Exchange Market",
+      "description": "Where to trade",
+      "x": 128,
+      "y": 95,
+      "bigicon": true,
+      "icon": {
+        "id": "Thaumcraft:ItemResource",
+        "damage": 18
+      },
+      "prerequisites": [
+        "{Bienvenu!}[de la dépendance...]"
+      ],
+      "trigger": "QUEST_TRIGGER"
+    },
+    {
+      "name": "Du gateau !",
+      "description": "Il est bon mon gateau !",
+      "x": 65,
+      "y": 58,
+      "icon": {
+        "id": "harvestcraft:pamcarrotCake"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour seulement 50 pièces !",
+          "longDescription": "Vous pouver le jetter au sol ou sur une table pour une meilleur convenance avant de vous en repaitre.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 50
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:pamcarrotCake"
+        },
+        {
+          "id": "harvestcraft:pamcheeseCake"
+        },
+        {
+          "id": "harvestcraft:pamcherrycheeseCake"
+        },
+        {
+          "id": "harvestcraft:pampineappleupsidedownCake"
+        }
+      ]
+    },
+    {
+      "name": "Boissons ?",
+      "description": "Would you like a drink ?",
+      "x": 142,
+      "y": 43,
+      "icon": {
+        "id": "harvestcraft:melonsmoothieItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "pour seulement 20 pièces !",
+          "longDescription": "Quelques fluides pour étancher votre soif.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:melonsmoothieItem",
+          "amount": 5
+        },
+        {
+          "id": "harvestcraft:carrotjuiceItem",
+          "amount": 10
+        },
+        {
+          "id": "harvestcraft:applejuiceItem",
+          "amount": 10
+        },
+        {
+          "id": "harvestcraft:melonjuiceItem",
+          "amount": 15
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 8,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "sucreries !",
+      "description": "Tout plein du sucre partout !",
+      "x": 84,
+      "y": 142,
+      "icon": {
+        "id": "harvestcraft:peppermintItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour seulement 20 piéce",
+          "longDescription": "Pour les amateur de surcreries.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:caramelappleItem",
+          "amount": 5
+        },
+        {
+          "id": "harvestcraft:chocolatestrawberryItem",
+          "amount": 5
+        },
+        {
+          "id": "harvestcraft:chocolatecherryItem",
+          "amount": 10
+        },
+        {
+          "id": "harvestcraft:peppermintItem",
+          "amount": 10
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 8,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Boissons ?",
+      "description": "Would you like a drink ?",
+      "x": 152,
+      "y": 23,
+      "icon": {
+        "id": "harvestcraft:cherrysodaItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "pour 20 piéces seulement !",
+          "longDescription": "Quelques fluides pour étancher votre soif.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:cherrysodaItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:colasodaItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:gingersodaItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:grapesodaItem",
+          "amount": 15
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 8,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Boissons ?",
+      "description": "Would you like a drink ?",
+      "x": 163,
+      "y": 43,
+      "icon": {
+        "id": "harvestcraft:blueberrysmoothieItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 20 pièces seulement !",
+          "longDescription": "Quelques fluides pour étancher votre soif.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:blueberrysmoothieItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:cherrysmoothieItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:papayasmoothieItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:starfruitsmoothieItem",
+          "amount": 15
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 8,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Boissons ?",
+      "description": "Would you like a drink ?",
+      "x": 152,
+      "y": 62,
+      "icon": {
+        "id": "harvestcraft:bananasmoothieItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "pour 20 pièces seulement !",
+          "longDescription": "Quelques fluides pour étancher votre soif.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:bananasmoothieItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:orangesmoothieItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:peachsmoothieItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:mangosmoothieItem",
+          "amount": 15
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 8,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Boissons ?",
+      "description": "Would you like a drink ?",
+      "x": 130,
+      "y": 62,
+      "icon": {
+        "id": "harvestcraft:limesmoothieItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 20 piéces seulement !",
+          "longDescription": "Quelques fluides pour étancher votre soif.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:limesmoothieItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:pomegranatesmoothieItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:blackberrysmoothieItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:raspberrysmoothieItem",
+          "amount": 15
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 8,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Boissons ?",
+      "description": "Would you like a drink ?",
+      "x": 120,
+      "y": 42,
+      "icon": {
+        "id": "harvestcraft:kiwismoothieItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 20 piéces seulement !",
+          "longDescription": "Quelques fluides pour étancher votre soif.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:kiwismoothieItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:pinacoladaItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:eggnogItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:apricotsmoothieItem",
+          "amount": 15
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 8,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Boissons ?",
+      "description": "Would you like a drink ?",
+      "x": 131,
+      "y": 24,
+      "icon": {
+        "id": "harvestcraft:lemonlimesodaItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "pour 20 piéces seulement !",
+          "longDescription": "Quelques fluides pour étancher votre soif.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:lemonlimesodaItem"
+        },
+        {
+          "id": "harvestcraft:orangesodaItem"
+        },
+        {
+          "id": "harvestcraft:rootbeersodaItem"
+        },
+        {
+          "id": "harvestcraft:strawberrysodaItem"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 8,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Boissons ?",
+      "description": "Would you like a drink ?",
+      "x": 174,
+      "y": 24,
+      "icon": {
+        "id": "harvestcraft:plumjuiceItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "pour seulement 20 pièces !",
+          "longDescription": "Quelques fluides pour étancher votre soif.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:plumjuiceItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:pearjuiceItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:soymilkItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:apricotjuiceItem",
+          "amount": 15
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 8,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Boissons ?",
+      "description": "Would you like a drink ?",
+      "x": 173,
+      "y": 61,
+      "icon": {
+        "id": "harvestcraft:strawberrymilkshakeItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "pour 20 piéces seulement !",
+          "longDescription": "Quelques fluides pour étancher votre soif.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:strawberrymilkshakeItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:chocolatemilkshakeItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:bananamilkshakeItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:gooseberrymilkshakeItem",
+          "amount": 15
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 8,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Boissons ?",
+      "description": "Would you like a drink ?",
+      "x": 185,
+      "y": 43,
+      "icon": {
+        "id": "harvestcraft:figjuiceItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "pour seulement 20 pièces !",
+          "longDescription": "Quelques fluides pour étancher votre soif.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:figjuiceItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:grapefruitjuiceItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:persimmonjuiceItem",
+          "amount": 15
+        },
+        {
+          "id": "harvestcraft:grapefruitsodaItem",
+          "amount": 15
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 8,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Du gateau !",
+      "description": "Il est bon mon gateau !",
+      "x": 76,
+      "y": 39,
+      "icon": {
+        "id": "harvestcraft:toastItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour seulement 50 pièces !",
+          "longDescription": "Vous pouver le jetter au sol ou sur une table pour une meilleur convenance avant de vous en repaitre.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 35
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:toastItem",
+          "amount": 2
+        },
+        {
+          "id": "harvestcraft:pumpkinbreadItem",
+          "amount": 2
+        },
+        {
+          "id": "harvestcraft:gingerbreadItem"
+        },
+        {
+          "id": "harvestcraft:zucchinibreadItem",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Du gateau !",
+      "description": "Il est bon mon gateau !",
+      "x": 55,
+      "y": 39,
+      "icon": {
+        "id": "harvestcraft:walnutraisinbreadItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour seulement 50 pièces !",
+          "longDescription": "Vous pouver le jetter au sol ou sur une table pour une meilleur convenance avant de vous en repaitre.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 35
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:walnutraisinbreadItem",
+          "amount": 2
+        },
+        {
+          "id": "harvestcraft:banananutbreadItem",
+          "amount": 2
+        },
+        {
+          "id": "harvestcraft:datenutbreadItem",
+          "amount": 2
+        },
+        {
+          "id": "harvestcraft:croissantItem",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Du gateau !",
+      "description": "Il est bon mon gateau !",
+      "x": 45,
+      "y": 59,
+      "icon": {
+        "id": "harvestcraft:pamchocolatesprinkleCake"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour seulement 50 pièces !",
+          "longDescription": "Vous pouver le jetter au sol ou sur une table pour une meilleur convenance avant de vous en repaitre.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 50
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:pamchocolatesprinkleCake"
+        },
+        {
+          "id": "harvestcraft:pamredvelvetCake"
+        },
+        {
+          "id": "harvestcraft:pamlamingtonCake"
+        },
+        {
+          "id": "harvestcraft:pampavlovaCake"
+        }
+      ]
+    },
+    {
+      "name": "Du gateau !",
+      "description": "Il est bon mon gateau !",
+      "x": 57,
+      "y": 76,
+      "icon": {
+        "id": "harvestcraft:pamholidayCake"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour seulement 50 pièces !",
+          "longDescription": "Vous pouver le jetter au sol ou sur une table pour une meilleur convenance avant de vous en repaitre.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 50
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:pamholidayCake"
+        },
+        {
+          "id": "harvestcraft:pampumpkincheeseCake"
+        },
+        {
+          "id": "harvestcraft:carrotcakeItem"
+        },
+        {
+          "id": "harvestcraft:cheesecakeItem"
+        }
+      ]
+    },
+    {
+      "name": "Du gateau !",
+      "description": "Il est bon mon gateau !",
+      "x": 35,
+      "y": 77,
+      "icon": {
+        "id": "harvestcraft:cherrycheesecakeItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour seulement 50 pièces !",
+          "longDescription": "Vous pouver le jetter au sol ou sur une table pour une meilleur convenance avant de vous en repaitre.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 50
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:cherrycheesecakeItem"
+        },
+        {
+          "id": "harvestcraft:pineappleupsidedowncakeItem"
+        },
+        {
+          "id": "harvestcraft:chocolatesprinklecakeItem"
+        },
+        {
+          "id": "harvestcraft:redvelvetcakeItem"
+        }
+      ]
+    },
+    {
+      "name": "Du gateau !",
+      "description": "Il est bon mon gateau !",
+      "x": 46,
+      "y": 96,
+      "icon": {
+        "id": "harvestcraft:lamingtonItem"
+      },
+      "prerequisites": [
+        "Food Exchange Market"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour seulement 50 pièces !",
+          "longDescription": "Vous pouver le jetter au sol ou sur une table pour une meilleur convenance avant de vous en repaitre.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 50
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:lamingtonItem"
+        },
+        {
+          "id": "harvestcraft:pavlovaItem"
+        },
+        {
+          "id": "harvestcraft:holidaycakeItem"
+        },
+        {
+          "id": "harvestcraft:pumpkincheesecakeItem"
+        }
+      ]
+    }
+  ],
+  "reputationBar": [
+    {
+      "reputationId": 8,
+      "x": 66,
+      "y": 195
+    }
+  ]
+}

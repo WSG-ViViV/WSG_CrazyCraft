@@ -1,0 +1,307 @@
+{
+  "name": "Carpenter\u0027s blocks",
+  "quests": [
+    {
+      "name": "Charpentier",
+      "description": "de la forme!",
+      "x": 23,
+      "y": 16,
+      "bigicon": true,
+      "icon": {
+        "id": "CarpentersBlocks:itemCarpentersHammer"
+      },
+      "prerequisites": [
+        "{les bases!}[Bookshelves]",
+        "{les bases!}[Des outils]",
+        "{les bases!}[La classe!]",
+        "{les bases!}[des entitées]",
+        "{les bases!}[Range disc.]",
+        "{les bases!}[vitrine]",
+        "{les bases!}[A table !]",
+        "{les bases!}[Fancy!]"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "L\u0027outils du charpentier.",
+          "longDescription": "Un marteau du charpentier vous sera utile pour modifier la forme d\u0027un block du carpentier.",
+          "items": [
+            {
+              "item": {
+                "id": "CarpentersBlocks:itemCarpentersHammer"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Des details !",
+          "longDescription": "A l\u0027aide de ce ciseau vous pourez dessiner des formes sur les block du carpentier. ",
+          "items": [
+            {
+              "item": {
+                "id": "CarpentersBlocks:itemCarpentersChisel"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Unnamed",
+      "x": 67,
+      "y": 62,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersStairs"
+      },
+      "prerequisites": [
+        "block du carpentier."
+      ]
+    },
+    {
+      "name": "Unnamed1",
+      "x": 80,
+      "y": 40,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersSlope"
+      },
+      "prerequisites": [
+        "block du carpentier."
+      ]
+    },
+    {
+      "name": "Unnamed2",
+      "x": 42,
+      "y": 62,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersCollapsibleBlock"
+      },
+      "prerequisites": [
+        "block du carpentier."
+      ]
+    },
+    {
+      "name": "Unnamed3",
+      "x": 126,
+      "y": 42,
+      "icon": {
+        "id": "CarpentersBlocks:itemCarpentersDoor"
+      },
+      "prerequisites": [
+        "Unnamed",
+        "Unnamed1"
+      ]
+    },
+    {
+      "name": "Unnamed4",
+      "x": 60,
+      "y": 111,
+      "icon": {
+        "id": "CarpentersBlocks:itemCarpentersTile"
+      },
+      "prerequisites": [
+        "Unnamed2",
+        "Unnamed"
+      ]
+    },
+    {
+      "name": "Unnamed5",
+      "x": 115,
+      "y": 64,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersBarrier"
+      },
+      "prerequisites": [
+        "Unnamed",
+        "Unnamed1"
+      ]
+    },
+    {
+      "name": "Unnamed6",
+      "x": 35,
+      "y": 111,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersSafe"
+      },
+      "prerequisites": [
+        "Unnamed2",
+        "Unnamed"
+      ]
+    },
+    {
+      "name": "Unnamed7",
+      "x": 42,
+      "y": 153,
+      "icon": {
+        "id": "CarpentersBlocks:itemCarpentersBed"
+      },
+      "prerequisites": [
+        "Unnamed4",
+        "Unnamed6"
+      ]
+    },
+    {
+      "name": "Unnamed8",
+      "x": 245,
+      "y": 117,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersButton"
+      },
+      "prerequisites": [
+        "Unnamed14"
+      ]
+    },
+    {
+      "name": "Unnamed9",
+      "x": 212,
+      "y": 27,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersGarageDoor"
+      },
+      "prerequisites": [
+        "Unnamed3",
+        "Unnamed5"
+      ]
+    },
+    {
+      "name": "Unnamed10",
+      "x": 231,
+      "y": 142,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersDaylightSensor"
+      },
+      "prerequisites": [
+        "Unnamed14",
+        "Unnamed17"
+      ]
+    },
+    {
+      "name": "block du carpentier.",
+      "description": "Le meilleur moyen de décorer.",
+      "x": 54,
+      "y": 40,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersBlock"
+      },
+      "prerequisites": [
+        "Charpentier"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "blocks du charpentier.",
+          "longDescription": "Une fois placé, faites un clic droit avec le materiel de votre choix dessus pour le camoufler avec ce materiel.",
+          "items": [
+            {
+              "item": {
+                "id": "CarpentersBlocks:blockCarpentersBlock"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "CarpentersBlocks:blockCarpentersBlock",
+          "amount": 10
+        },
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Unnamed12",
+      "x": 214,
+      "y": 166,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersPressurePlate"
+      },
+      "prerequisites": [
+        "Unnamed14"
+      ]
+    },
+    {
+      "name": "Unnamed13",
+      "x": 118,
+      "y": 122,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersGate"
+      },
+      "prerequisites": [
+        "Unnamed15",
+        "Unnamed3"
+      ]
+    },
+    {
+      "name": "Unnamed14",
+      "x": 173,
+      "y": 121,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersLever"
+      },
+      "prerequisites": [
+        "Unnamed18",
+        "Unnamed3"
+      ]
+    },
+    {
+      "name": "Unnamed15",
+      "x": 96,
+      "y": 98,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersLadder"
+      },
+      "prerequisites": [
+        "Unnamed1",
+        "Unnamed2"
+      ]
+    },
+    {
+      "name": "Unnamed16",
+      "x": 211,
+      "y": 62,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersHatch"
+      },
+      "prerequisites": [
+        "Unnamed3",
+        "Unnamed5"
+      ]
+    },
+    {
+      "name": "Unnamed17",
+      "x": 83,
+      "y": 150,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersFlowerPot"
+      },
+      "prerequisites": [
+        "Unnamed15",
+        "Unnamed4"
+      ]
+    },
+    {
+      "name": "Unnamed18",
+      "x": 142,
+      "y": 104,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersTorch"
+      },
+      "prerequisites": [
+        "Unnamed15",
+        "Unnamed5"
+      ]
+    }
+  ],
+  "reputationBar": []
+}

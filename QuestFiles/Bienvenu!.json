@@ -1,0 +1,1374 @@
+{
+  "name": "Bienvenu!",
+  "description": "Un Petit cadeau de bienvenu.",
+  "quests": [
+    {
+      "name": "What in the world .. domination",
+      "description": "Ce débarasser de ce livre ...",
+      "x": 154,
+      "y": 101,
+      "bigicon": true,
+      "icon": {
+        "id": "OpenBlocks:infoBook"
+      },
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "un gros noob !",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "TConstruct:oreBerries",
+          "damage": 5,
+          "amount": 20
+        },
+        {
+          "id": "minecraft:jukebox"
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        },
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 8
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:record_13"
+        },
+        {
+          "id": "minecraft:record_cat"
+        },
+        {
+          "id": "minecraft:record_blocks"
+        },
+        {
+          "id": "PortalGun:RecordStillAlive"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 5
+        },
+        {
+          "reputation": 1,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Immersive Engineering",
+      "description": "IE bundle",
+      "x": 213,
+      "y": 54,
+      "icon": {
+        "id": "ImmersiveEngineering:woodenDevice",
+        "damage": 5
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "optionlinks": [
+        "MineFactoryReloaded",
+        "Factorization",
+        "Applied Energistics ",
+        "Thermal Expanssion",
+        "Forestry",
+        "Thinker\u0027s Construct",
+        "EnderIO",
+        "Thaumcraft",
+        "Blood Magics",
+        "Ars Magica",
+        "Botania",
+        "Witchery"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ImmersiveEngineering:tool"
+        },
+        {
+          "id": "minecraft:netherbrick",
+          "amount": 56
+        },
+        {
+          "id": "minecraft:blaze_powder",
+          "amount": 14
+        },
+        {
+          "id": "ImmersiveEngineering:tool",
+          "damage": 3
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "BuildCraft|Factory:tankBlock"
+        },
+        {
+          "id": "OpenBlocks:tank"
+        },
+        {
+          "id": "ThermalExpansion:Tank",
+          "damage": 1
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "IndustrialCraft",
+      "description": "IC2 Bundle",
+      "x": 184,
+      "y": 41,
+      "icon": {
+        "id": "IC2:itemArmorNanoHelmet",
+        "damage": 1,
+        "nbt": "{charge:1000000.0d}"
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "optionlinks": [
+        "Immersive Engineering",
+        "MineFactoryReloaded",
+        "Factorization",
+        "Applied Energistics ",
+        "Thermal Expanssion",
+        "Forestry",
+        "Thinker\u0027s Construct",
+        "EnderIO",
+        "Thaumcraft",
+        "Blood Magics",
+        "Ars Magica",
+        "Botania",
+        "Witchery"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "IC2:itemToolWrench"
+        },
+        {
+          "id": "minecraft:redstone",
+          "amount": 20
+        },
+        {
+          "id": "IC2:itemToolForgeHammer"
+        },
+        {
+          "id": "IC2:itemToolCutter"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "MineFactoryReloaded",
+      "description": "MFR bundle",
+      "x": 226,
+      "y": 79,
+      "icon": {
+        "id": "MineFactoryReloaded:conveyor",
+        "damage": 16
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "optionlinks": [
+        "Factorization",
+        "Applied Energistics ",
+        "Thermal Expanssion",
+        "Forestry",
+        "Thinker\u0027s Construct",
+        "EnderIO",
+        "Blood Magics",
+        "Ars Magica",
+        "Botania",
+        "Witchery",
+        "Thaumcraft"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "MineFactoryReloaded:safarinet.reusable"
+        },
+        {
+          "id": "MineFactoryReloaded:rubber.raw",
+          "amount": 64
+        },
+        {
+          "id": "minecraft:clay_ball",
+          "amount": 64
+        },
+        {
+          "id": "MineFactoryReloaded:hammer"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Thaumcraft",
+      "description": "thaumcraft bundle",
+      "x": 93,
+      "y": 137,
+      "icon": {
+        "id": "Thaumcraft:ItemThaumonomicon"
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "optionlinks": [
+        "Blood Magics",
+        "Ars Magica",
+        "Botania",
+        "Witchery"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:WandCasting",
+          "nbt": "{aqua:2500,terra:2500,ignis:2500,ordo:2500,perditio:2500,aer:2500}"
+        },
+        {
+          "id": "Thaumcraft:blockMagicalLog",
+          "amount": 20
+        },
+        {
+          "id": "minecraft:gold_ore",
+          "amount": 2
+        },
+        {
+          "id": "minecraft:bookshelf"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Thaumcraft:ItemShard",
+          "amount": 10
+        },
+        {
+          "id": "Thaumcraft:ItemShard",
+          "damage": 1,
+          "amount": 10
+        },
+        {
+          "id": "Thaumcraft:ItemShard",
+          "damage": 2,
+          "amount": 10
+        },
+        {
+          "id": "Thaumcraft:ItemShard",
+          "damage": 3,
+          "amount": 10
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Blood Magics",
+      "description": "BM bundle",
+      "x": 80,
+      "y": 110,
+      "icon": {
+        "id": "AWWayofTime:weakBloodOrb"
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "optionlinks": [
+        "Ars Magica",
+        "Botania",
+        "Witchery"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:diamond",
+          "amount": 2
+        },
+        {
+          "id": "minecraft:gold_ore",
+          "amount": 6
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Thinker\u0027s Construct",
+      "description": "TC bundle",
+      "x": 142,
+      "y": 168,
+      "icon": {
+        "id": "TConstruct:SearedBlock",
+        "damage": 2
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "optionlinks": [
+        "EnderIO",
+        "Thaumcraft",
+        "Blood Magics",
+        "Ars Magica",
+        "Botania",
+        "Witchery"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:mossy_cobblestone",
+          "amount": 40
+        },
+        {
+          "id": "TConstruct:SearedBrick",
+          "damage": 5,
+          "amount": 32
+        },
+        {
+          "id": "minecraft:lava_bucket",
+          "amount": 4
+        },
+        {
+          "id": "IC2:blockOreCopper",
+          "amount": 32
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Forestry",
+      "description": "forestry bundle",
+      "x": 174,
+      "y": 168,
+      "icon": {
+        "id": "Forestry:apatite"
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "optionlinks": [
+        "Thinker\u0027s Construct",
+        "EnderIO",
+        "Thaumcraft",
+        "Blood Magics",
+        "Ars Magica",
+        "Botania",
+        "Witchery"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Forestry:wrench"
+        },
+        {
+          "id": "IC2:blockOreCopper",
+          "amount": 25
+        },
+        {
+          "id": "IC2:blockOreTin",
+          "amount": 25
+        },
+        {
+          "id": "minecraft:gold_ore",
+          "amount": 10
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:glass",
+          "amount": 20
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Thermal Expanssion",
+      "description": "TE bundle",
+      "x": 202,
+      "y": 156,
+      "icon": {
+        "id": "ThermalExpansion:material",
+        "damage": 1
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "optionlinks": [
+        "Forestry",
+        "Thinker\u0027s Construct",
+        "EnderIO",
+        "Thaumcraft",
+        "Blood Magics",
+        "Ars Magica",
+        "Botania",
+        "Witchery"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ThermalExpansion:wrench"
+        },
+        {
+          "id": "minecraft:redstone",
+          "amount": 32
+        },
+        {
+          "id": "minecraft:gold_ore",
+          "amount": 10
+        },
+        {
+          "id": "ThermalFoundation:Ore",
+          "damage": 2,
+          "amount": 10
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Applied Energistics ",
+      "description": "AE2 bundle",
+      "x": 220,
+      "y": 131,
+      "icon": {
+        "id": "extracells:storage.fluid"
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "optionlinks": [
+        "Thermal Expanssion",
+        "Forestry",
+        "Thinker\u0027s Construct",
+        "EnderIO",
+        "Thaumcraft",
+        "Blood Magics",
+        "Ars Magica",
+        "Botania",
+        "Witchery"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:item.ToolCertusQuartzWrench"
+        },
+        {
+          "id": "appliedenergistics2:item.ItemMultiMaterial",
+          "damage": 1,
+          "amount": 10
+        },
+        {
+          "id": "minecraft:quartz",
+          "amount": 32
+        },
+        {
+          "id": "minecraft:redstone",
+          "amount": 32
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "appliedenergistics2:item.ItemMultiMaterial",
+          "amount": 32
+        },
+        {
+          "id": "minecraft:diamond_pickaxe"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Factorization",
+      "description": "factorization bundle",
+      "x": 234,
+      "y": 106,
+      "icon": {
+        "id": "factorization:FzBlock",
+        "damage": 26,
+        "nbt": "{storage:1280000}"
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "optionlinks": [
+        "Applied Energistics ",
+        "Thermal Expanssion",
+        "Forestry",
+        "Thinker\u0027s Construct",
+        "EnderIO",
+        "Thaumcraft",
+        "Blood Magics",
+        "Ars Magica",
+        "Botania",
+        "Witchery"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "factorization:docbook"
+        },
+        {
+          "id": "IC2:blockOreLead",
+          "amount": 32
+        },
+        {
+          "id": "ThermalFoundation:Ore",
+          "damage": 2,
+          "amount": 32
+        },
+        {
+          "id": "factorization:DarkIronOre",
+          "amount": 32
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "IC2:blockOreLead",
+          "amount": 32
+        },
+        {
+          "id": "factorization:DarkIronOre",
+          "amount": 32
+        },
+        {
+          "id": "ThermalFoundation:Ore",
+          "damage": 2,
+          "amount": 32
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "EnderIO",
+      "description": "enderio bundle",
+      "x": 114,
+      "y": 160,
+      "icon": {
+        "id": "EnderIO:blockStirlingGenerator"
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "optionlinks": [
+        "Thaumcraft",
+        "Blood Magics",
+        "Ars Magica",
+        "Botania",
+        "Witchery"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:iron_ore",
+          "amount": 32
+        },
+        {
+          "id": "minecraft:gold_ore",
+          "amount": 10
+        },
+        {
+          "id": "minecraft:redstone",
+          "amount": 10
+        },
+        {
+          "id": "IC2:blockOreCopper",
+          "amount": 32
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Ars Magica",
+      "description": "AM2 bundle",
+      "x": 89,
+      "y": 84,
+      "icon": {
+        "id": "arsmagica2:ArcaneCompendium"
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "optionlinks": [
+        "Botania",
+        "Witchery"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:liquidEssenceBucket",
+          "amount": 4
+        },
+        {
+          "id": "minecraft:item_frame"
+        },
+        {
+          "id": "minecraft:book"
+        },
+        {
+          "id": "arsmagica2:itemOre",
+          "damage": 5
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Magical Crops",
+      "description": "MC bundle",
+      "x": 158,
+      "y": 33,
+      "icon": {
+        "id": "magicalcrops:magicalcrops_MagicEssence"
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "optionlinks": [
+        "IndustrialCraft",
+        "Immersive Engineering",
+        "MineFactoryReloaded",
+        "Factorization",
+        "Applied Energistics ",
+        "Thermal Expanssion",
+        "Forestry",
+        "Thinker\u0027s Construct",
+        "EnderIO",
+        "Thaumcraft",
+        "Blood Magics",
+        "Ars Magica",
+        "Botania",
+        "Witchery"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ExtraUtilities:watering_can",
+          "damage": 1
+        },
+        {
+          "id": "magicalcrops:magicalcrops_MagicSeedsEssence",
+          "amount": 9
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "magicalcrops:magicalcrops_MagicSeedsEssence",
+          "amount": 25
+        },
+        {
+          "id": "minecraft:diamond",
+          "amount": 2
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Botania",
+      "description": "botania bundle",
+      "x": 106,
+      "y": 60,
+      "icon": {
+        "id": "Botania:lexicon"
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "optionlinks": [
+        "Witchery"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:lexicon"
+        },
+        {
+          "id": "Botania:fertilizer",
+          "amount": 64
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Witchery",
+      "description": "Witchery bundle",
+      "x": 131,
+      "y": 39,
+      "icon": {
+        "id": "witchery:witchhand"
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "description": "Be a Crafter",
+          "longDescription": "Soyez un peu moins noob qu\u0027un noob total.",
+          "reputation": [
+            {
+              "reputation": 1,
+              "lower": 2,
+              "upper": 0,
+              "inverted": false
+            },
+            {
+              "reputation": 0,
+              "lower": 4,
+              "upper": 0,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:infoBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "witchery:vampirebook"
+        },
+        {
+          "id": "witchery:ingredient",
+          "damage": 46
+        },
+        {
+          "id": "witchery:ingredient",
+          "damage": 47
+        },
+        {
+          "id": "witchery:ingredient",
+          "damage": 48
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 1,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "de la dépendance...",
+      "description": "il faut manger pour vivre...",
+      "x": 34,
+      "y": 32,
+      "icon": {
+        "id": "harvestcraft:leafychickensandwichItem"
+      },
+      "prerequisites": [
+        "What in the world .. domination"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "A table !!!",
+          "longDescription": "grace a quelques pieces d\u0027or vous vous offrez un bon repas.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "harvestcraft:coffeeItem"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "harvestcraft:leafychickensandwichItem"
+        },
+        {
+          "id": "harvestcraft:chickensandwichItem"
+        },
+        {
+          "id": "harvestcraft:fishsandwichItem"
+        },
+        {
+          "id": "harvestcraft:leafyfishsandwichItem"
+        }
+      ]
+    },
+    {
+      "name": "*Debug* Reset Réputation",
+      "x": 32,
+      "y": 117,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "HardcoreQuesting:quest_book"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "OpenBlocks:infoBook"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -10
+        },
+        {
+          "reputation": 1,
+          "value": -5
+        }
+      ]
+    }
+  ],
+  "reputationBar": [
+    {
+      "reputationId": 0,
+      "x": 108,
+      "y": 17
+    }
+  ]
+}
