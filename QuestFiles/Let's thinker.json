@@ -97,6 +97,7 @@
       "prerequisites": [
         "The Thinker\u0027s way"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -152,6 +153,7 @@
       "prerequisites": [
         "The Thinker\u0027s way"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "CRAFT",
@@ -297,6 +299,12 @@
           "damage": 18,
           "amount": 2
         }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 7,
+          "value": 5
+        }
       ]
     },
     {
@@ -372,13 +380,15 @@
             {
               "item": {
                 "id": "TConstruct:toolRod"
-              }
+              },
+              "precision": "FUZZY"
             },
             {
               "item": {
                 "id": "TConstruct:binding",
                 "damage": 1
-              }
+              },
+              "precision": "FUZZY"
             }
           ]
         },
@@ -470,10 +480,11 @@
         "Pièces de pierre",
         "des pièce d\u0027outil en METAL !!!"
       ],
+      "trigger": "ANTI_TRIGGER",
       "parentrequirement": 1,
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "description": "hoe \u0026 shovel",
           "longDescription": "De quoi faire une pelle et une hoe en pierre.",
           "items": [
@@ -481,13 +492,15 @@
               "item": {
                 "id": "TConstruct:shovelHead",
                 "damage": 1
-              }
+              },
+              "precision": "FUZZY"
             },
             {
               "item": {
                 "id": "TConstruct:scytheBlade",
                 "damage": 1
-              }
+              },
+              "precision": "ORE_DICTIONARY"
             }
           ]
         }

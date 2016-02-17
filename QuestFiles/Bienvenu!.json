@@ -5,8 +5,8 @@
     {
       "name": "What in the world .. domination",
       "description": "Ce débarasser de ce livre ...",
-      "x": 154,
-      "y": 101,
+      "x": 155,
+      "y": 103,
       "bigicon": true,
       "icon": {
         "id": "OpenBlocks:infoBook"

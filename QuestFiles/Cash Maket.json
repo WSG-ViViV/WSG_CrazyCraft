@@ -1,0 +1,149 @@
+{
+  "name": "Cash Maket",
+  "quests": [
+    {
+      "name": "Unnamed",
+      "x": 158,
+      "y": 100,
+      "icon": {
+        "id": "Thaumcraft:ItemResource",
+        "damage": 18
+      },
+      "prerequisites": [
+        "{Bienvenu!}[de la dépendance...]"
+      ],
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 8,
+              "lower": 0,
+              "upper": 4,
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnamed1",
+      "x": 132,
+      "y": 99,
+      "icon": {
+        "id": "minecraft:porkchop"
+      },
+      "prerequisites": [
+        "Unnamed"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:porkchop"
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Unnamed2",
+      "x": 145,
+      "y": 123,
+      "icon": {
+        "id": "minecraft:fish"
+      }
+    },
+    {
+      "name": "Unnamed3",
+      "x": 145,
+      "y": 76,
+      "icon": {
+        "id": "magicalcrops:magicalcrops_RawMeat"
+      }
+    },
+    {
+      "name": "Unnamed4",
+      "x": 172,
+      "y": 77,
+      "icon": {
+        "id": "harvestcraft:muttonrawItem"
+      }
+    },
+    {
+      "name": "Unnamed5",
+      "x": 187,
+      "y": 100,
+      "icon": {
+        "id": "minecraft:chicken"
+      }
+    },
+    {
+      "name": "Unnamed6",
+      "x": 172,
+      "y": 123,
+      "icon": {
+        "id": "minecraft:beef"
+      }
+    },
+    {
+      "name": "Unnamed7",
+      "x": 116,
+      "y": 122,
+      "icon": {
+        "id": "minecraft:fish",
+        "damage": 1
+      }
+    },
+    {
+      "name": "Unnamed8",
+      "x": 116,
+      "y": 76,
+      "icon": {
+        "id": "aura:lexicon"
+      }
+    },
+    {
+      "name": "Unnamed9",
+      "x": 162,
+      "y": 46
+    },
+    {
+      "name": "Unnamed10",
+      "x": 207,
+      "y": 76,
+      "icon": {
+        "id": "minecraft:apple"
+      }
+    },
+    {
+      "name": "Unnamed11",
+      "x": 206,
+      "y": 132,
+      "icon": {
+        "id": "minecraft:carrot"
+      }
+    },
+    {
+      "name": "Unnamed12",
+      "x": 156,
+      "y": 153,
+      "icon": {
+        "id": "minecraft:potato"
+      }
+    }
+  ],
+  "reputationBar": []
+}

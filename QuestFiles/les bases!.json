@@ -259,40 +259,6 @@
       ]
     },
     {
-      "name": "le chemin du mineur.",
-      "description": "a vous pioches, prét ? minez !",
-      "x": 73,
-      "y": 38,
-      "icon": {
-        "id": "minecraft:stone_pickaxe"
-      },
-      "prerequisites": [
-        "un meilleur moyen de crafter."
-      ],
-      "trigger": "ANTI_TRIGGER",
-      "tasks": [
-        {
-          "type": "DETECT",
-          "description": "junk !",
-          "longDescription": "Avant de miner quoi que se soit d\u0027autre, il va faloir miner de la pierre ...",
-          "items": [
-            {
-              "item": {
-                "id": "minecraft:cobblestone"
-              },
-              "required": 10
-            }
-          ]
-        }
-      ],
-      "reward": [
-        {
-          "id": "minecraft:coal",
-          "amount": 5
-        }
-      ]
-    },
-    {
       "name": "Ca va chauffer!",
       "description": "de quoi cuire!",
       "x": 86,
@@ -598,9 +564,10 @@
       },
       "prerequisites": [
         "L\u0027inventaire",
-        "Unnamed"
+        "BedTime"
       ],
       "trigger": "ANTI_TRIGGER",
+      "parentrequirement": 1,
       "tasks": [
         {
           "type": "CRAFT",
@@ -635,7 +602,7 @@
       },
       "prerequisites": [
         "L\u0027inventaire",
-        "Unnamed"
+        "BedTime"
       ],
       "trigger": "ANTI_TRIGGER",
       "parentrequirement": 1,
@@ -686,7 +653,7 @@
       },
       "prerequisites": [
         "L\u0027inventaire",
-        "Unnamed"
+        "BedTime"
       ],
       "trigger": "ANTI_TRIGGER",
       "parentrequirement": 1,
@@ -775,7 +742,7 @@
       },
       "prerequisites": [
         "L\u0027inventaire",
-        "Unnamed"
+        "BedTime"
       ],
       "trigger": "ANTI_TRIGGER",
       "parentrequirement": 1,
@@ -834,7 +801,7 @@
       },
       "prerequisites": [
         "L\u0027inventaire",
-        "Unnamed"
+        "BedTime"
       ],
       "trigger": "ANTI_TRIGGER",
       "parentrequirement": 1,
@@ -871,7 +838,7 @@
       },
       "prerequisites": [
         "L\u0027inventaire",
-        "Unnamed"
+        "BedTime"
       ],
       "trigger": "ANTI_TRIGGER",
       "parentrequirement": 1,
@@ -929,7 +896,7 @@
       },
       "prerequisites": [
         "L\u0027inventaire",
-        "Unnamed"
+        "BedTime"
       ],
       "trigger": "ANTI_TRIGGER",
       "parentrequirement": 1,
@@ -946,6 +913,13 @@
               "precision": "FUZZY"
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 10
         }
       ],
       "rewardchoice": [
@@ -981,7 +955,7 @@
       },
       "prerequisites": [
         "L\u0027inventaire",
-        "Unnamed"
+        "BedTime"
       ],
       "trigger": "ANTI_TRIGGER",
       "parentrequirement": 1,
@@ -1341,7 +1315,8 @@
       ]
     },
     {
-      "name": "Unnamed",
+      "name": "BedTime",
+      "description": "Bien doulliet, bien chaud!",
       "x": 22,
       "y": 174,
       "icon": {
@@ -1351,7 +1326,27 @@
         "Killing frenzzy",
         "Crafting !!!"
       ],
-      "trigger": "ANTI_TRIGGER"
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Un lit.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:bed"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 18,
+          "amount": 16
+        }
+      ]
     },
     {
       "name": "pierre de lave",
@@ -1432,6 +1427,41 @@
       },
       "prerequisites": [
         "pierre de lave"
+      ]
+    },
+    {
+      "name": "le chemin du mineur.",
+      "description": "a vous pioches, prét ? minez !",
+      "x": 72,
+      "y": 37,
+      "icon": {
+        "id": "minecraft:stone_pickaxe",
+        "damage": 28
+      },
+      "prerequisites": [
+        "un meilleur moyen de crafter."
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Junk!",
+          "longDescription": "Avant de miner quoi que se soit d\u0027autre, il va faloir miner de la pierre ...",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:cobblestone"
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:coal",
+          "amount": 5
+        }
       ]
     }
   ],

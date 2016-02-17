@@ -29,13 +29,13 @@
       ]
     },
     {
-      "name": "IC2 material store.",
-      "description": "des materiaux pour IC2",
-      "x": 87,
-      "y": 19,
+      "name": "Mineral store.",
+      "description": "Des tones de mineraux sous forme de poudre principalement.",
+      "x": 32,
+      "y": 13,
       "icon": {
-        "id": "IC2:blockKineticGenerator",
-        "damage": 5
+        "id": "IC2:itemDust",
+        "damage": 4
       },
       "prerequisites": [
         "market exchange"
@@ -44,7 +44,7 @@
         {
           "type": "CONSUME",
           "description": "Pour 50 pièces seulement!",
-          "longDescription": "Des materiaux pour industrialcraft.",
+          "longDescription": "Sur cette échope vous pouvez voir toutes type de metaux sous forme de poudre.",
           "items": [
             {
               "item": {
@@ -58,31 +58,32 @@
       ],
       "rewardchoice": [
         {
-          "id": "IC2:itemIngot",
+          "id": "IC2:itemDust",
+          "damage": 3,
           "amount": 16
         },
         {
-          "id": "IC2:itemIngot",
-          "damage": 1,
-          "amount": 16
+          "id": "IC2:itemDust",
+          "damage": 4,
+          "amount": 4
         },
         {
-          "id": "IC2:itemIngot",
+          "id": "IC2:itemDust",
           "damage": 5,
-          "amount": 16
+          "amount": 8
         },
         {
-          "id": "IC2:itemIngot",
+          "id": "IC2:itemDust",
           "damage": 6,
-          "amount": 16
+          "amount": 8
         }
       ]
     },
     {
       "name": "IC2 tool store.",
       "description": "Des outils pour IC2.",
-      "x": 111,
-      "y": 19,
+      "x": 143,
+      "y": 16,
       "icon": {
         "id": "IC2:itemToolForgeHammer"
       },
@@ -705,6 +706,56 @@
         },
         {
           "id": "minecraft:diamond_horse_armor"
+        }
+      ]
+    },
+    {
+      "name": "Mineral store.",
+      "description": "Des tones de mineraux sous forme de poudre principalement.",
+      "x": 56,
+      "y": 13,
+      "icon": {
+        "id": "IC2:itemDust",
+        "damage": 7
+      },
+      "prerequisites": [
+        "market exchange"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pour 50 pièces seulement!",
+          "longDescription": "Sur cette échope vous pouvez voir toutes type de metaux sous forme de poudre.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 18
+              },
+              "required": 50
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "IC2:itemDust",
+          "damage": 7,
+          "amount": 16
+        },
+        {
+          "id": "IC2:itemDust",
+          "damage": 10,
+          "amount": 16
+        },
+        {
+          "id": "IC2:blockOreUran",
+          "amount": 8
+        },
+        {
+          "id": "IC2:itemDust",
+          "damage": 9,
+          "amount": 64
         }
       ]
     }

@@ -82,11 +82,10 @@
         "id": "Thaumcraft:ItemThaumonomicon"
       },
       "prerequisites": [
-        "La première baguette",
+        "Unnamed",
         "La première baguette"
       ],
       "trigger": "ANTI_TRIGGER",
-      "parentrequirement": 1,
       "tasks": [
         {
           "type": "DETECT",
@@ -297,7 +296,7 @@
       "y": 13,
       "icon": {
         "id": "Thaumcraft:WandCasting",
-        "nbt": "{aer:2500,perditio:2500,ignis:2500,ordo:2500,aqua:2500,terra:2500}"
+        "nbt": "{aqua:2500,ignis:2500,terra:2500,ordo:2500,perditio:2500,aer:2500}"
       },
       "prerequisites": [
         "Unnamed"
@@ -313,7 +312,7 @@
             {
               "item": {
                 "id": "Thaumcraft:WandCasting",
-                "nbt": "{perditio:2500,aer:2500,ignis:2500,aqua:2500,ordo:2500,terra:2500}"
+                "nbt": "{aqua:2500,ignis:2500,terra:2500,ordo:2500,perditio:2500,aer:2500}"
               }
             }
           ]
@@ -337,7 +336,7 @@
       "y": 13,
       "icon": {
         "id": "Thaumcraft:WandCasting",
-        "nbt": "{perditio:2500,aer:2500,ignis:2500,aqua:2500,ordo:2500,terra:2500}"
+        "nbt": "{aqua:2500,ignis:2500,terra:2500,ordo:2500,perditio:2500,aer:2500}"
       },
       "prerequisites": [
         "Unnamed"
@@ -356,7 +355,7 @@
             {
               "item": {
                 "id": "Thaumcraft:WandCasting",
-                "nbt": "{aer:2500,perditio:2500,ignis:2500,ordo:2500,aqua:2500,terra:2500}"
+                "nbt": "{aqua:2500,ignis:2500,terra:2500,ordo:2500,perditio:2500,aer:2500}"
               }
             }
           ]
@@ -376,7 +375,7 @@
     {
       "name": "Unnamed",
       "x": 38,
-      "y": -20,
+      "y": 236,
       "icon": {
         "id": "Thaumcraft:ItemThaumonomicon"
       },
